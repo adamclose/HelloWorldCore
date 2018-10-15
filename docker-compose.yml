@@ -4,5 +4,5 @@ services:
   helloworldcore: 
     image: ${DOCKER_REGISTRY}helloworldcore
     build: 
-      context: .
+      context: ..HelloWorldCore
       dockerfile: HelloWorldCore/Dockerfile

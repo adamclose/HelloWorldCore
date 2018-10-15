@@ -7,7 +7,7 @@ WORKDIR /src
 COPY HelloWorldCore/HelloWorldCore.csproj HelloWorldCore/
 RUN dotnet restore HelloWorldCore/HelloWorldCore.csproj
 COPY . .
-WORKDIR /src/HelloWorldCore
+WORKDIR /src/HelloWorldCore/HelloWorldCore/
 RUN dotnet build HelloWorldCore.csproj -c Release -o /app
 
 FROM build AS publish
